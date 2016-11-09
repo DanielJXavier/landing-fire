@@ -520,5 +520,54 @@ header {
       color: #f5f5f5;
     }
   }
+}
 
+// FOOTER
+.fire-footer {
+  font-family: AvenirNext;
+  text-transform: uppercase;
+  color: $brand-primary;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('/images/fundo_pattern.png') repeat;
+  padding-top: 20px;
+}
+
+.fire-footer-imprensa {
+  font-weight: 700;
+  font-size: 12px;
+
+  &:hover {
+    background: #171717;
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+.fire-footer-copyright {
+  color: #4b4b4b;
+  font-size: 10px;
+
+  span {
+    color: $brand-primary;
+  }
+}
+
+.fire-footer-social {
+  height: 100%;
+  h4 {
+    font-size: 12px;
+    text-align: right;
+    width: 120px;
+    display: inline-block;
+  }
+
+  i {
+    display: inline-block;
+    padding: 5px;
+    float: right;
+  }
 }
