@@ -69,6 +69,10 @@ body {
     .icon-bar{
       background: $brand-secondary;
     }
+
+    @media only screen and (max-width : $screen-xs-max) {
+      border: none;
+    }
   }
 
   .navbar-nav {
@@ -81,6 +85,10 @@ body {
       &:last-child {
         border: solid $brand-primary 1px;
         border-radius: 20px;
+
+        @media only screen and (max-width : $screen-xs-max) {
+          border: none;
+        }
       }
 
       &:hover{
@@ -92,7 +100,28 @@ body {
         color: $brand-secondary;
         padding: 5px 20px 5px 20px;
       }
+
+      @media only screen and (max-width : $screen-lg) {
+        margin: 0;
+      }
+
+      @media only screen and (max-width : $screen-xs-max) {
+        padding: 0px 50px 0px 50px;
+      }
     }
+  }
+
+  .navbar-collapse {
+    @media only screen and (max-width : $screen-xs-max) {
+      background: #202020;
+    }
+  }
+
+  @media only screen and (max-width : $screen-xs-max) {
+    width: 100%;
+    height: 30px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -101,6 +130,29 @@ body {
     li {
       margin: 0;
     }
+  }
+
+  @media only screen and (min-width : $screen-xs-max) {
+    position: fixed;
+    background: #202020 !important;
+    padding-top: 15px;
+  }
+
+  .fire-button-gradient-nav {
+    @media only screen and (min-width : $screen-lg) {
+      display: inline;
+    }
+  }
+
+  .fire-logo-nav {
+    @media only screen and (min-width : $screen-md) {
+      display: inline;
+    }
+  }
+
+  @media only screen and (max-width : $screen-sm) {
+    background: #202020 !important;
+    position: fixed;
   }
 }
 
@@ -136,6 +188,18 @@ header {
   span, h2, h3, a, button {
     text-transform: uppercase;
   }
+
+  @media only screen and (max-width : $screen-md) {
+    height: 100%;
+  }
+
+  @media only screen and (max-width : $screen-sm) {
+    background: url('/images/fundo_pattern.png') repeat;
+  }
+
+  @media screen and (max-height: 900px) {
+    height: 100%;
+  }
 }
 
 .fire-jumbotron {
@@ -144,6 +208,24 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media only screen and (max-width : $screen-md) {
+    height: 100%;
+  }
+
+  @media screen and (max-height: 900px) {
+    height: 100%;
+  }
+}
+
+.fire-jumbotron-inner {
+  @media only screen and (max-width : $screen-md) {
+    height: 100%;
+  }
+
+  @media screen and (max-height: 900px) {
+    height: 100%;
+  }
 }
 
 .fire-small-text {
@@ -165,6 +247,10 @@ header {
     color: $brand-secondary;
     font-weight: 700;
   }
+
+  @media only screen and (max-width : $screen-sm) {
+    font-size: 15px;
+  }
 }
 
 .fire-info {
@@ -176,6 +262,12 @@ header {
 
     span {
       color: $brand-primary;
+    }
+
+    @media only screen and (max-width : $screen-sm) {
+      font-family: AvenirNext;
+      color: $brand-secondary;
+      font-size: 15px;
     }
   }
 }
@@ -230,6 +322,11 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media only screen and (max-width : $screen-md) {
+    height: 100%;
+    padding: 50px 0px 100px 0px;
+  }
 }
 
 .fire-video-container-inner {
@@ -260,6 +357,16 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media only screen and (max-width : $screen-sm) {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .fire-video-desc {
@@ -274,6 +381,21 @@ header {
     text-align: left;
     font-family: AvenirNext;
   }
+
+  @media only screen and (max-width : $screen-lg) {
+    padding: 0px 0px 100px 20px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    padding: 0;
+    border: none;
+    top: 20px;
+    left: 0;
+  }
+
+  @media only screen and (max-width : $screen-sm) {
+    top: 10px;
+  }
 }
 
 .fire-video-main-text {
@@ -284,6 +406,19 @@ header {
   line-height: 40px;
   color: $brand-primary;
   margin: 0;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 220px;
+    font-size: 40px;
+    line-height: 35px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
 }
 
 .fire-video-text {
@@ -293,16 +428,48 @@ header {
   color: #cdcdcd;
   margin-top: 5px;
 
+  @media only screen and (max-width : $screen-lg) {
+    width: 250px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media only screen and (max-width : $screen-sm) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 // TESTIMONIES
 .fire-testimonies-container {
   background: url('/images/fundo_pattern.png') repeat;
   height: 100%;
   padding: 100px 0px 100px 0px;
+
+  @media only screen and (max-width : $screen-lg) {
+    padding-top: 50px;
+  }
 }
 
 .fire-testimony {
   display: flex;
   align-items: center;
+  @media only screen and (max-width : $screen-md) {
+    display: block;
+
+  }
+}
+
+.fire-testimonies-info-container {
+  @media only screen and (max-width : $screen-md) {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .fire-testimonies-text {
@@ -314,6 +481,17 @@ header {
   text-align: right;
   float: right;
   margin-top: 50px;
+
+  @media only screen and (max-width : $screen-lg) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .fire-testimonies-author-name {
@@ -326,10 +504,30 @@ header {
   letter-spacing: 0px;
   text-align: right;
   float: right;
+
+  @media only screen and (max-width : $screen-lg) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .fire-testimonies-brand-image {
   float: right;
+  @media only screen and (max-width : $screen-md) {
+    display: none;
+  }
+}
+
+.fire-testimonies-author-image-container {
+  @media only screen and (max-width : $screen-md) {
+    width: 100%;
+    display: block !important;
+    text-align: center !important;
+  }
 }
 
 .fire-testimonies-author-image {
@@ -337,11 +535,24 @@ header {
   margin-top: 30px;
   position: relative;
   z-index: 500;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 150px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    margin-top: 70px;
+  }
 }
 
 .fire-testimonies-text-container {
   background: #373737;
   margin-top: 40px;
+
+  @media only screen and (max-width : $screen-md) {
+    margin: -70px 10px 0px 10px;
+    padding: 10px 0px 10px 0px;
+  }
 }
 
 .fire-testimonies-author-text {
@@ -351,11 +562,22 @@ header {
   line-height: 20px;
   color: #cdcdcd;
   text-align: left;
+
+  @media only screen and (max-width : $screen-lg) {
+    padding: 10px 60px 30px 60px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .fire-testimonies-quote-image {
   width: 50px;
   margin: 50px 0px 0px 100px;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 30px;
+    margin: 20px 0px 0px 50px;
+  }
 }
 
 .fire-testimonies-carousel-navigation {
@@ -380,16 +602,31 @@ header {
     color: #4d4d4d;
     background: #373737;
   }
+
+  @media only screen and (max-width : $screen-sm) {
+    display: none;
+  }
 }
 
 .fire-testimonies-carousel-items-count {
   position: absolute;
   padding: 13px 0px 0px 20px;
+  @media only screen and (max-width : $screen-sm) {
+    display: none;
+  }
+}
+
 // SPEAKERS
 .fire-speakers-container {
   font-family: AvenirNext;
   height: 100%;
   padding: 100px 0px 100px 0px;
+
+  @media only screen and (max-width : $screen-md) {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 .fire-speakers-title {
@@ -404,10 +641,36 @@ header {
   color: $brand-primary;
   transform: rotate(-90deg) translateY(0);
   margin: 200px 0px 0px 20px;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 250px;
+    font-size: 50px;
+    top: 30px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    position: relative;
+    margin-top: 0;
+    transform: rotate(0);
+    width: 100%;
+    text-align: center;
+  }
+
+  @media only screen and (max-width : 732px) {
+    font-size: 40px;
+  }
 }
 
 .fire-main-speaker-photo {
   width: 900px;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 600px;
+  }
+
+  @media only screen and (max-width : 732px) {
+    width: 350px;
+  }
 }
 
 .fire-main-speaker-name {
@@ -418,10 +681,27 @@ header {
   line-height: 45px;
   color: $brand-primary;
   margin: 90px 0px 45px 0px;
+
+  @media only screen and (max-width : $screen-lg) {
+    margin-left: 100px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .fire-main-speaker-brand-image {
   width: 250px;
+
+  @media only screen and (max-width : $screen-lg) {
+    margin-left: 100px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    margin: 0;
+  }
 }
 
 .fire-main-speaker-text {
@@ -429,15 +709,52 @@ header {
   padding: 50px;
   width: 480px;
   margin-top: 90px;
+
+  @media only screen and (max-width : $screen-lg) {
+    padding: 30px;
+    width: 400px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+  }
 }
 
 .fire-speaker {
   padding: 0;
+
+  @media only screen and (max-width : $screen-lg) {
+    height: 380px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    background: #282828;
+    margin: 15px;
+  }
+
+  @media only screen and (max-width : 732px) {
+    background: none;
+  }
 }
 
 .fire-speakers-photo {
   float: right;
   width: 420px;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 300px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    width: auto;
+    height: 100%;
+  }
+
+  @media only screen and (max-width : 732px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .fire-speakers-info {
@@ -448,6 +765,22 @@ header {
   float: left;
   position: relative;
   top: -110px;
+
+  @media only screen and (max-width : $screen-lg) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    width: 250px;
+  }
+
+  @media only screen and (max-width : 732px) {
+    position: relative;
+    top: -80px;
+  }
 }
 
 .fire-speakers-name {
@@ -455,12 +788,21 @@ header {
   font-weight: 900;
   font-size: 25px;
   color: $brand-primary;
+
+  @media only screen and (max-width : $screen-lg) {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
 }
 
 .fire-speakers-bio {
   margin-top: 30px;
   color: $brand-secondary;
   font-size: 12px;
+
+  @media only screen and (max-width : $screen-lg) {
+    margin-top: 10px;
+  }
 }
 
 .fire-bio-button-open {
@@ -501,6 +843,21 @@ header {
   padding: 10px;
   position: relative;
   top: -60px;
+
+  @media only screen and (max-width : $screen-lg) {
+    top: -100px;
+  }
+
+  @media only screen and (max-width : $screen-md) {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    width: 200px;
+  }
+
+  @media only screen and (max-width : 732px) {
+    display: none;
+  }
 }
 
 .fire-speakers-section-text {
@@ -519,6 +876,22 @@ header {
     span {
       color: #f5f5f5;
     }
+
+    @media only screen and (max-width : $screen-lg) {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width : $screen-md) {
+      background: #282828;
+      padding: 30px;
+      border-radius: 20px;
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (max-width : 732px) {
+    width: 100%;
   }
 }
 
