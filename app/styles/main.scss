@@ -126,3 +126,95 @@ body {
   letter-spacing: 0.5px;
   display: none;
 }
+
+// HOME
+header {
+  height: 100vh;
+  background: url('/images/fundo.png') no-repeat center center;
+  background-size: cover;
+
+  span, h2, h3, a, button {
+    text-transform: uppercase;
+  }
+}
+
+.fire-jumbotron {
+  height: calc(100vh - #{$navbar-height} - #{$navbar-margin-bottom});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fire-small-text {
+  font-family: AvenirNext;
+  font-weight: 700;
+  color: $brand-primary;
+}
+
+.fire-subtitle {
+  font-family: AvenirNext;
+  color: $brand-primary;
+  font-size: 18px;
+  letter-spacing: 3px;
+  max-width: 750px;
+  margin-top: 50px;
+  line-height: 22px;
+
+  span {
+    color: $brand-secondary;
+    font-weight: 700;
+  }
+}
+
+.fire-info {
+  h3 {
+    font-family: AvenirNext;
+    color: $brand-secondary;
+    font-size: 15px;
+    margin: 10px;
+
+    span {
+      color: $brand-primary;
+    }
+  }
+}
+
+.fire-info-data {
+  letter-spacing: 2.5px;
+  font-weight: 700;
+}
+
+.fire-info-local {
+  font-weight: 300;
+}
+
+.fire-button-gradient {
+  color: $brand-secondary;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  font-family: AvenirNext;
+  font-weight: 700;
+  background: #ff721f; /* For browsers that do not support gradients */
+  background: linear-gradient(#ff721f, #ff4337); /* Standard syntax */
+  margin: 20px 0 60px 0px;
+  letter-spacing: 1.5px;
+}
+
+.fire-vertical-hr {
+  transform: rotate(90deg);
+  width: 90px;
+  color: $brand-primary;
+  border-top: 1px solid $brand-primary;
+  margin-bottom: 0;
+
+  @media screen and (max-height: 900px) {
+    display: none;
+  }
+
+  @media screen and (max-width : $screen-md) {
+    display: none;
+  }
+}
