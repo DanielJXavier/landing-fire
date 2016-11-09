@@ -20,32 +20,32 @@ function onPlayerStateChange() {
 // jQuery
 $(function() {
 	// Owl Carousel
-	var owl = $(".fire-testimonies-carousel");
+	var owl = $('.fire-testimonies-carousel');
 	owl.owlCarousel({singleItem: true, mouseDrag: false});
 	function setItemsCount() {
-		$("#items-count").text(("0" + currentItem).slice(-2) + " de " + ("0" + totalItems).slice(-2));
+		$('#items-count').text(('0' + currentItem).slice(-2) + ' de ' + ('0' + totalItems).slice(-2));
 		if (currentItem == totalItems) {
-			$("#next-item").removeClass("enabled").addClass("disabled");
+			$('#next-item').removeClass('enabled').addClass('disabled');
 		} else {
-			$("#next-item").removeClass("disabled").addClass("enabled");
+			$('#next-item').removeClass('disabled').addClass('enabled');
 		}
 		if (currentItem == 1) {
-			$("#prev-item").removeClass("enabled").addClass("disabled");
+			$('#prev-item').removeClass('enabled').addClass('disabled');
 		} else {
-			$("#prev-item").removeClass("disabled").addClass("enabled");
+			$('#prev-item').removeClass('disabled').addClass('enabled');
 		}
 	}
 	var currentItem = 1;
-	var totalItems = $(".fire-testimony").length;
+	var totalItems = $('.fire-testimony').length;
 	setItemsCount();
-	$("#prev-item").click(function() {
+	$('#prev-item').click(function() {
 		if (currentItem > 1) {
 			currentItem--;
 			owl.trigger('owl.prev');
 			setItemsCount();
 		}
 	});
-	$("#next-item").click(function() {
+	$('#next-item').click(function() {
 		if (currentItem < totalItems) {
 			currentItem++;
 			owl.trigger('owl.next');
@@ -56,11 +56,11 @@ $(function() {
   // Fixed Menu
   var fixedMenu = false;
   $(window).scroll(function () {
-  	if (!fixedMenu && $(window).scrollTop() >= $(".fire-button-gradient").position().top) {
-  		$(".navbar-default").addClass("fire-fixed");
+  	if (!fixedMenu && $(window).scrollTop() >= $('.fire-button-gradient').position().top) {
+  		$('.navbar-default').addClass('fire-fixed');
   		fixedMenu = true;
-  	} else if (fixedMenu && $(window).scrollTop() < $(".fire-button-gradient").position().top) {
-  		$(".navbar-default").removeClass("fire-fixed");
+  	} else if (fixedMenu && $(window).scrollTop() < $('.fire-button-gradient').position().top) {
+  		$('.navbar-default').removeClass('fire-fixed');
   		fixedMenu = false;
   	}
   });
@@ -71,16 +71,16 @@ $(function() {
 	});
 
   // Extended Speaker Bio
-  $(".fire-bio-button-open").click(function(){
-    $(".fire-speakers-long-bio").show();
-    $(".fire-bio-button-close").show();
-    $(".fire-speakers-short-bio").hide();
+  $('.fire-bio-button-open').click(function(){
+    $('.fire-speakers-long-bio').show();
+    $('.fire-bio-button-close').show();
+    $('.fire-speakers-short-bio').hide();
     $(this).hide();
   });
-  $(".fire-bio-button-close").click(function(){
-    $(".fire-speakers-short-bio").show();
-    $(".fire-bio-button-open").show();
-    $(".fire-speakers-long-bio").hide();
+  $('.fire-bio-button-close').click(function(){
+    $('.fire-speakers-short-bio').show();
+    $('.fire-bio-button-open').show();
+    $('.fire-speakers-long-bio').hide();
     $(this).hide();
   });
 
