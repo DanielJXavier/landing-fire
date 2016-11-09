@@ -53,6 +53,18 @@ $(function() {
 		}
 	});
 
+  // Fixed Menu
+  var fixedMenu = false;
+  $(window).scroll(function () {
+  	if (!fixedMenu && $(window).scrollTop() >= $(".fire-button-gradient").position().top) {
+  		$(".navbar-default").addClass("fire-fixed");
+  		fixedMenu = true;
+  	} else if (fixedMenu && $(window).scrollTop() < $(".fire-button-gradient").position().top) {
+  		$(".navbar-default").removeClass("fire-fixed");
+  		fixedMenu = false;
+  	}
+  });
+
 	// Video Player
 	$('.fire-video-play').click(function(){
 		player.playVideo();
