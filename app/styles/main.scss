@@ -667,13 +667,14 @@ header {
 
   @media only screen and (max-width : $screen-md) {
     position: relative;
-    margin-top: 0;
     transform: rotate(0);
     width: 100%;
     text-align: center;
   }
 
-  @media only screen and (max-width : $screen-md) {
+  @media only screen and (max-width : $screen-sm) {
+    margin-top: 0;
+    padding-top: 30px;
     width: auto;
     font-size: 40px;
   }
