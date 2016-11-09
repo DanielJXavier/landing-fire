@@ -36,3 +36,93 @@ $icon-font-path: '../fonts/';
   font-style: normal;
   src: url("/fonts/AvenirNext-Heavy.otf") format("opentype");
 }
+
+// COMMON VARIABLES
+$brand-primary: #00ffc6;
+$brand-secondary: #fff;
+$navbar-height: 60px;
+
+// GENERAL
+body {
+  background: #313131;
+}
+
+// MENU
+.navbar-default {
+  z-index: 999;
+  font-family: AvenirNext;
+  font-weight: 700;
+  background: none;
+  border: none;
+  width: 100%;
+  height: $navbar-height;
+  padding-top: 30px;
+  text-align: center;
+
+  .navbar-toggle {
+    background: none !important;
+
+    &:hover {
+      background: $brand-primary !important;
+    }
+
+    .icon-bar{
+      background: $brand-secondary;
+    }
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+    li {
+      margin: 0px 30px 0px 30px;
+      &:last-child {
+        border: solid $brand-primary 1px;
+        border-radius: 20px;
+      }
+
+      &:hover{
+        border-radius: 20px;
+        background-color: $brand-primary;
+      }
+
+      a {
+        color: $brand-secondary;
+        padding: 5px 20px 5px 20px;
+      }
+    }
+  }
+}
+
+.fire-fixed {
+  .navbar-nav {
+    li {
+      margin: 0;
+    }
+  }
+}
+
+.fire-logo-nav {
+  float: left;
+  height: 35px;
+  display: none;
+}
+
+.fire-button-gradient-nav {
+  float: right;
+  height: 30px;
+  color: $brand-secondary;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+  font-family: AvenirNext;
+  font-weight: 700;
+  font-size: 12px;
+  background: #ff721f; /* For browsers that do not support gradients */
+  background: linear-gradient(#ff721f, #ff4337); /* Standard syntax */
+  letter-spacing: 0.5px;
+  display: none;
+}
