@@ -985,7 +985,11 @@ header {
 .fire-footer-imprensa {
   font-weight: 700;
   font-size: 12px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    color: $brand-primary;
+  }
   &:hover {
     background: #171717;
   }
@@ -996,7 +1000,6 @@ header {
 
   @media only screen and (max-width : $screen-xs) {
     margin: 0;
-    padding: 10px 0px 10px 0px;
   }
 }
 
@@ -1032,5 +1035,13 @@ header {
     display: inline-block;
     padding: 5px;
     float: right;
+  }
+
+  a {
+    text-decoration: none;
+    color: $brand-primary;
+    &:hover {
+      color: #fff;
+    }
   }
 }
