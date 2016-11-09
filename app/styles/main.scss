@@ -385,4 +385,140 @@ header {
 .fire-testimonies-carousel-items-count {
   position: absolute;
   padding: 13px 0px 0px 20px;
+// SPEAKERS
+.fire-speakers-container {
+  font-family: AvenirNext;
+  height: 100%;
+  padding: 100px 0px 100px 0px;
+}
+
+.fire-speakers-title {
+  width: 450px;
+  z-index: 500;
+  position: absolute;
+  top: 100px;
+  font-family: AvenirNext;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 70px;
+  color: $brand-primary;
+  transform: rotate(-90deg) translateY(0);
+  margin: 200px 0px 0px 20px;
+}
+
+.fire-main-speaker-photo {
+  width: 900px;
+}
+
+.fire-main-speaker-name {
+  width: 300px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  color: $brand-primary;
+  margin: 90px 0px 45px 0px;
+}
+
+.fire-main-speaker-brand-image {
+  width: 250px;
+}
+
+.fire-main-speaker-text {
+  background: $brand-secondary;
+  padding: 50px;
+  width: 480px;
+  margin-top: 90px;
+}
+
+.fire-speaker {
+  padding: 0;
+}
+
+.fire-speakers-photo {
+  float: right;
+  width: 420px;
+}
+
+.fire-speakers-info {
+  background: #373737;
+  width: 230px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 40px;
+  float: left;
+  position: relative;
+  top: -110px;
+}
+
+.fire-speakers-name {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  color: $brand-primary;
+}
+
+.fire-speakers-bio {
+  margin-top: 30px;
+  color: $brand-secondary;
+  font-size: 12px;
+}
+
+.fire-bio-button-open {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $brand-primary;
+  cursor: pointer;
+  width: 92px;
+  padding: 10px;
+
+  &:hover {
+    color: #373737;
+    background: $brand-primary;
+  }
+}
+
+.fire-bio-button-close {
+  color: $brand-primary;
+  cursor: pointer;
+  display: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.fire-speakers-long-bio-container {
+  z-index: 600 !important;
+  position: relative;
+}
+
+.fire-speakers-long-bio {
+  display: none;
+  margin-top: 0;
+}
+
+.fire-speakers-brand-image {
+  padding: 10px;
+  position: relative;
+  top: -60px;
+}
+
+.fire-speakers-section-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h4 {
+    font-family: AvenirNext;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $brand-primary;
+
+    span {
+      color: #f5f5f5;
+    }
+  }
+
 }
