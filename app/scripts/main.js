@@ -69,4 +69,18 @@ $(function() {
 	$('.fire-video-play').click(function(){
 		player.playVideo();
 	});
+
+  // Extended Speaker Bio
+  $(".fire-bio-button-open").click(function(){
+    $(".fire-speakers-long-bio").show();
+    $(".fire-bio-button-close").show();
+    $(".fire-speakers-short-bio").hide();
+    $(this).hide();
+  });
+  $(".fire-bio-button-close").click(function(){
+    $(".fire-speakers-short-bio").show();
+    $(".fire-bio-button-open").show();
+    $(".fire-speakers-long-bio").hide();
+    $(this).hide();
+  });
 })
