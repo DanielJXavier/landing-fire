@@ -82,6 +82,7 @@ body {
 
     li {
       margin: 0px 30px 0px 30px;
+
       &:last-child {
         border: solid $brand-primary 1px;
         border-radius: 20px;
@@ -711,6 +712,7 @@ header {
 
   @media only screen and (max-width : $screen-lg) {
     margin-left: 100px;
+    margin-top: 60px;
   }
 
   @media only screen and (max-width : $screen-md) {
@@ -751,6 +753,7 @@ header {
   @media only screen and (max-width : $screen-lg) {
     padding: 30px;
     width: 400px;
+    margin-top: 50px;
   }
 
   @media only screen and (max-width : $screen-md) {
@@ -997,12 +1000,14 @@ header {
   font-weight: 700;
   font-size: 12px;
   padding: 20px;
+
+  &:hover {
+    background: #171717;
+  }
+
   a {
     text-decoration: none;
     color: $brand-primary;
-  }
-  &:hover {
-    background: #171717;
   }
 
   @media only screen and (max-width : $screen-md) {
@@ -1051,6 +1056,7 @@ header {
   a {
     text-decoration: none;
     color: $brand-primary;
+
     &:hover {
       color: #fff;
     }
