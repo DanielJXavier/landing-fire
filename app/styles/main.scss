@@ -292,4 +292,97 @@ header {
   line-height: 25px;
   color: #cdcdcd;
   margin-top: 5px;
+
+// TESTIMONIES
+.fire-testimonies-container {
+  background: url('/images/fundo_pattern.png') repeat;
+  height: 100%;
+  padding: 100px 0px 100px 0px;
+}
+
+.fire-testimony {
+  display: flex;
+  align-items: center;
+}
+
+.fire-testimonies-text {
+  text-transform: uppercase;
+  width: 310px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #cdcdcd;
+  text-align: right;
+  float: right;
+  margin-top: 50px;
+}
+
+.fire-testimonies-author-name {
+  width: 460px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 40px;
+  color: $brand-primary;
+  margin-top: 0;
+  letter-spacing: 0px;
+  text-align: right;
+  float: right;
+}
+
+.fire-testimonies-brand-image {
+  float: right;
+}
+
+.fire-testimonies-author-image {
+  width: 250px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 500;
+}
+
+.fire-testimonies-text-container {
+  background: #373737;
+  margin-top: 40px;
+}
+
+.fire-testimonies-author-text {
+  padding: 20px 140px 60px 120px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 20px;
+  color: #cdcdcd;
+  text-align: left;
+}
+
+.fire-testimonies-quote-image {
+  width: 50px;
+  margin: 50px 0px 0px 100px;
+}
+
+.fire-testimonies-carousel-navigation {
+  color: $brand-primary;
+  text-align: center;
+
+  .fire-nav-button {
+    cursor: pointer;
+    background: #4d4d4d;
+    padding: 15px;
+    margin: -2px -2px 0px -2px;
+  }
+
+  .enabled {
+    &:hover {
+      background: $brand-primary;
+      color: $brand-secondary;
+    }
+  }
+
+  .disabled {
+    color: #4d4d4d;
+    background: #373737;
+  }
+}
+
+.fire-testimonies-carousel-items-count {
+  position: absolute;
+  padding: 13px 0px 0px 20px;
 }
